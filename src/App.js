@@ -23,7 +23,6 @@ class App extends Component {
         <Route exact path="/" render={(props)=><Home {...props}/>}/>
         <Route exact path="/blogs" render={(props)=><Blogs {...props}/>}/>
         <Route exact path="/projects" render={(props)=><Projects {...props}/>}/>
-        <Route exact path="/contact" render={(props)=><Contact {...props}/>}/>
       </Switch>
       </MuiThemeProvider>
       </Layout>
