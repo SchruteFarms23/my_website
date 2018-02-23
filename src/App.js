@@ -21,8 +21,8 @@ class App extends Component {
       <NavBar />
       <Switch>
         <Route exact path="/" render={(props)=><Home {...props}/>}/>
-        <Route exact path="/blogs" render={(props)=><Blogs {...props}/>}/>
         <Route exact path="/projects" render={(props)=><Projects {...props}/>}/>
+        <Route exact path="/blogs" render={(props)=><Blogs {...props}/>}/>
       </Switch>
       </MuiThemeProvider>
       </Layout>
