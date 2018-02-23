@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button, Grid, Header, Icon, Modal } from 'semantic-ui-react'
 
-export default class ProjectModals extends React.Component {
+export default class ResumeModals extends React.Component {
 
   state = {
     modalOpen1: false
@@ -33,7 +33,7 @@ export default class ProjectModals extends React.Component {
           </Button>
         </Modal.Actions>
       </Modal>
-      <a href='Resume.pdf' target="_blank" rel="noopener noreferrer"><Button basic color='black'>Resume (for mobile)</Button></a>
+      <a href='Resume.pdf' target="_blank" rel="noopener noreferrer"><Button basic color='blue'>Resume (for mobile)</Button></a>
       </Grid.Column>
     )
   }

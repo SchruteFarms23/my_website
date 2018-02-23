@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Grid, Image } from 'semantic-ui-react'
-import ProjectModals from './ProjectModal'
+import ResumeModals from './ResumeModals'
 
 export default class Home extends Component {
   render(){
@@ -22,7 +22,7 @@ export default class Home extends Component {
                 creativity to leave my mark on a project really peaked my interest, and I decided to pursue this passion by enrolling and
                 graduating from the Flatiron School. With strong interpersonal, communication and problem solving skills, I am also
                 experienced in managing teams to deliver successful outcomes</p>
-              <ProjectModals />
+              <ResumeModals />
           </Grid.Column >
            <Grid.Column width={3}>
 
