@@ -11,7 +11,6 @@ const Footer = (props) => {
 
   return(
     <div>
-    <div style={phantom} />
     <div className="footer">
       <div className="container">
         <h1>Made with Love and React.js by Roman Mulladzhanov</h1>
