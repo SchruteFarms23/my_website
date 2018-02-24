@@ -9,8 +9,6 @@ import Projects from './Components/Projects'
 import Contact from './Components/Contact'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import Layout from './Layout'
-import Header from './Components/Header'
-import Footer from './Components/Footer'
 
 
 
@@ -18,20 +16,16 @@ import Footer from './Components/Footer'
 class App extends Component {
   render() {
     return (
-      <main className="wrapper">
-
+      <Layout>
       <MuiThemeProvider>
-      <Header />
       <NavBar />
       <Switch>
         <Route exact path="/" render={(props)=><Home {...props}/>}/>
         <Route exact path="/projects" render={(props)=><Projects {...props}/>}/>
         <Route exact path="/blogs" render={(props)=><Blogs {...props}/>}/>
       </Switch>
-      <div className='push'></div>
-      <Footer />
       </MuiThemeProvider>
-      </main>
+      </Layout>
     );
   }
 }

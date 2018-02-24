@@ -1,7 +1,7 @@
-html {
-  height: 100%;
-  margin: 0;
-}
+/* html {
+    position: relative;
+    min-height: 100%;
+} */
 
 @media screen and (max-width: 375px){
   .name{
@@ -10,13 +10,15 @@ html {
     padding-right: 20%;
     float:left;
   }
+
+  .middle.alligned.five.wide.column.picture {
+    padding-left: 150%;
+  }
+
+
 }
 
-
-
-
 body {
-  height: 100%;
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
@@ -43,6 +45,10 @@ body {
 
 .footer {
   background: #000;
+  position: relative;
+    left: 0;
+    bottom: 0px;
+    height: 60px;
     width: 100%;
     padding: 20px;
     overflow:hidden;
@@ -94,23 +100,3 @@ p {
 .blog-post {
   padding: 3% 5%;
 }
-
-.wrapper {
-  min-height: 100%;
-
-  /* This is the same as the height of the footer */
-  margin-bottom: -60px;
-}
-
-.footer,
-.push {
-  height: 60px;
-}
-
-/* position: relative;
-  left: 0;
-  bottom: 0px;
-  height: 60px;
-  width: 100%;
-  padding: 20px;
-  overflow:hidden; */
