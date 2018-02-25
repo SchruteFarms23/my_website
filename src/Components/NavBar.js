@@ -15,7 +15,8 @@ export default class NavBar extends Component {
     const { activeItem } = this.state
 
     const iconSize = {
-      fontSize: '2em',
+      fontSize: '3.5em',
+      padding:'8px'
     }
 
     const mobileStyle = {
@@ -35,7 +36,7 @@ export default class NavBar extends Component {
 
     return(
       <div>
-      <MediaQuery minDeviceWidth={1224}>
+      <MediaQuery minDeviceWidth={431}>
       <Segment inverted>
         <Menu stackable inverted secondary>
            <Menu.Item as={Link} to="/" name='home' active={activeItem === 'home'} onClick={this.handleItemClick}  />
@@ -51,7 +52,7 @@ export default class NavBar extends Component {
       </Segment>
       </MediaQuery>
 
-      <MediaQuery maxDeviceWidth={415}>
+      <MediaQuery maxDeviceWidth={430}>
         <Menu fluid inverted vertical >
         <Menu.Item style={mobileStyle}>
           <h2 style={mainName}>Roman Mulladzhanov</h2>
