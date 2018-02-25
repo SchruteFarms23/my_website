@@ -29,6 +29,10 @@ export default class NavBar extends Component {
       fontSize: '3em',
     }
 
+    const mainName = {
+      fontfamily: 'Cuprum, sans-serif',
+    }
+
     return(
       <div>
       <MediaQuery minDeviceWidth={1224}>
@@ -50,7 +54,7 @@ export default class NavBar extends Component {
       <MediaQuery maxDeviceWidth={415}>
         <Menu fluid inverted vertical >
         <Menu.Item style={mobileStyle}>
-          <h2 className="name">Roman Mulladzhanov</h2>
+          <h2 style={mainName}>Roman Mulladzhanov</h2>
           <a href='https://www.linkedin.com/in/roman-mulladzhanov-4270bb44/' target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin fa-fw" style={mobilePadding}></i></a>
           <a href="https://github.com/SchruteFarms23" target="_blank" rel="noopener noreferrer"><i className="fab fa-github fa-fw" style={mobilePadding}></i></a>
           <a href="https://medium.com/@romanmullady" target="_blank" rel="noopener noreferrer"><i className="fab fa-medium fa-fw" style={mobilePadding}></i></a>
