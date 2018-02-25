@@ -3,16 +3,20 @@
     min-height: 100%;
 } */
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 376px){
   .name{
-    font-size: 25px;
+    font-size: 23px;
     text-align: left;
     padding-right: 20%;
-    float:left;
+
   }
 
   .middle.alligned.five.wide.column.picture {
-    padding-left: 150%;
+    text-align: center;
+  }
+
+  .picture{
+    border-radius: 150%;
   }
 
 
