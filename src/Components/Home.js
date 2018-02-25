@@ -4,8 +4,14 @@ import ResumeModals from './ResumeModals'
 
 export default class Home extends Component {
   render(){
-    var styles = {
+    const styles = {
       padding: '10px'
+    }
+
+    const pictureMobile = {
+      paddingLeft: '20%',
+      paddingRight: '20%',
+      borderRadius: '80%',
     }
     return(
       <Grid stackable padded >
@@ -14,7 +20,7 @@ export default class Home extends Component {
 
            </Grid.Column>
            <Grid.Column width={5} verticalAlign="middle" className="picture">
-             <Image className='picture' src={require('../img/me.jpg')} height='350' />
+             <Image className='picture' src={require('../img/me.jpg')} height='350' style={pictureMobile} />
            </Grid.Column>
            <Grid.Column width={5} verticalAlign='middle' textAlign="left"   >
              <p>Hi, I'm a Full-Stack Web Developer with proficiency in Ruby on Rails, Javascript and React/Redux programming. After excelling at a
